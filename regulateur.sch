@@ -12236,10 +12236,10 @@ Source: AVX .. aphvc.pdf</description>
 <part name="GND4" library="supply1" deviceset="GND" device=""/>
 <part name="P+1" library="supply1" deviceset="VCC" device=""/>
 <part name="GND5" library="supply1" deviceset="GND" device=""/>
-<part name="PAD1" library="wirepad" deviceset="3,81/1,3" device="" value="OUT"/>
-<part name="PAD2" library="wirepad" deviceset="3,81/1,3" device="" value="IN"/>
-<part name="PAD3" library="wirepad" deviceset="3,81/1,3" device="" value="IN_GND"/>
-<part name="PAD4" library="wirepad" deviceset="3,81/1,3" device="" value="OUT_GND"/>
+<part name="VOUT" library="wirepad" deviceset="3,81/1,3" device="" value="OUT"/>
+<part name="VIN" library="wirepad" deviceset="3,81/1,3" device="" value="IN"/>
+<part name="GND_IN" library="wirepad" deviceset="3,81/1,3" device="" value="IN_GND"/>
+<part name="GND_OUT" library="wirepad" deviceset="3,81/1,3" device="" value="OUT_GND"/>
 <part name="GND6" library="supply1" deviceset="GND" device=""/>
 </parts>
 <sheets>
@@ -12264,10 +12264,10 @@ Source: AVX .. aphvc.pdf</description>
 <instance part="GND4" gate="1" x="35.56" y="86.36" rot="R270"/>
 <instance part="P+1" gate="VCC" x="-2.54" y="88.9"/>
 <instance part="GND5" gate="1" x="22.86" y="38.1"/>
-<instance part="PAD1" gate="1" x="144.78" y="63.5" rot="R180"/>
-<instance part="PAD2" gate="1" x="-17.78" y="81.28"/>
-<instance part="PAD3" gate="1" x="-17.78" y="60.96"/>
-<instance part="PAD4" gate="1" x="144.78" y="33.02" rot="R180"/>
+<instance part="VOUT" gate="1" x="144.78" y="63.5" rot="R180"/>
+<instance part="VIN" gate="1" x="-17.78" y="81.28"/>
+<instance part="GND_IN" gate="1" x="-17.78" y="60.96"/>
+<instance part="GND_OUT" gate="1" x="144.78" y="33.02" rot="R180"/>
 <instance part="GND6" gate="1" x="132.08" y="25.4"/>
 </instances>
 <busses>
@@ -12337,7 +12337,7 @@ Source: AVX .. aphvc.pdf</description>
 <junction x="109.22" y="63.5"/>
 <junction x="109.22" y="58.42"/>
 <junction x="121.92" y="60.96"/>
-<pinref part="PAD1" gate="1" pin="P"/>
+<pinref part="VOUT" gate="1" pin="P"/>
 <junction x="121.92" y="63.5"/>
 <junction x="142.24" y="63.5"/>
 <wire x1="121.92" y1="63.5" x2="142.24" y2="63.5" width="0.1524" layer="91"/>
@@ -12366,7 +12366,7 @@ Source: AVX .. aphvc.pdf</description>
 <wire x1="-2.54" y1="68.58" x2="-2.54" y2="60.96" width="0.1524" layer="91"/>
 <junction x="-2.54" y="68.58"/>
 <junction x="-2.54" y="60.96"/>
-<pinref part="PAD3" gate="1" pin="P"/>
+<pinref part="GND_IN" gate="1" pin="P"/>
 <wire x1="-15.24" y1="60.96" x2="-2.54" y2="60.96" width="0.1524" layer="91"/>
 <junction x="-15.24" y="60.96"/>
 </segment>
@@ -12414,7 +12414,7 @@ Source: AVX .. aphvc.pdf</description>
 <junction x="10.16" y="17.78"/>
 </segment>
 <segment>
-<pinref part="PAD4" gate="1" pin="P"/>
+<pinref part="GND_OUT" gate="1" pin="P"/>
 <junction x="142.24" y="33.02"/>
 <wire x1="132.08" y1="33.02" x2="142.24" y2="33.02" width="0.1524" layer="91"/>
 <pinref part="GND6" gate="1" pin="GND"/>
@@ -12439,7 +12439,7 @@ Source: AVX .. aphvc.pdf</description>
 <wire x1="53.34" y1="81.28" x2="20.32" y2="81.28" width="0.1524" layer="91"/>
 <junction x="20.32" y="81.28"/>
 <junction x="53.34" y="81.28"/>
-<pinref part="PAD2" gate="1" pin="P"/>
+<pinref part="VIN" gate="1" pin="P"/>
 <wire x1="-15.24" y1="81.28" x2="-2.54" y2="81.28" width="0.1524" layer="91"/>
 <junction x="-15.24" y="81.28"/>
 <junction x="-2.54" y="76.2"/>
