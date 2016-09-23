@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.6.0">
+<eagle version="7.5.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -12219,15 +12219,15 @@ Source: AVX .. aphvc.pdf</description>
 </class>
 </classes>
 <parts>
-<part name="U1" library="LTC_By_element14_Batch_1" deviceset="LT1372CS8PBF" device=""/>
+<part name="U1" library="LTC_By_element14_Batch_1" deviceset="LT1372CS8PBF" device="" value="LT1372"/>
 <part name="L1" library="WE-DD" deviceset="WE-DD" device="_1260/1280/1210_CROSSED" technology="-744871220" value="22uH"/>
 <part name="D1" library="diode" deviceset="MBRS130LT3" device=""/>
 <part name="C4" library="resistor" deviceset="CPOL-EU" device="CT7343" value="22uF"/>
 <part name="C5" library="resistor" deviceset="CPOL-EU" device="CT7343" value="22uF"/>
 <part name="C1" library="resistor" deviceset="CPOL-EU" device="CT7343" value="22uF"/>
-<part name="R1" library="resistor" deviceset="R-EU_" device="R1206" value="10K"/>
-<part name="R2" library="resistor" deviceset="R-EU_" device="R1206" value="31.6K"/>
-<part name="R3" library="resistor" deviceset="R-EU_" device="R1206" value="5.1K"/>
+<part name="R1" library="resistor" deviceset="R-EU_" device="M1206" value="12.76K"/>
+<part name="R2" library="resistor" deviceset="R-EU_" device="M1206" value="37.24K"/>
+<part name="R3" library="resistor" deviceset="R-EU_" device="M1206" value="5K"/>
 <part name="C2" library="resistor" deviceset="C-EU" device="C1206" value="10nF"/>
 <part name="C3" library="resistor" deviceset="C-EU" device="C1206" value="200pF"/>
 <part name="GND1" library="supply1" deviceset="GND" device=""/>
@@ -12236,8 +12236,8 @@ Source: AVX .. aphvc.pdf</description>
 <part name="GND4" library="supply1" deviceset="GND" device=""/>
 <part name="P+1" library="supply1" deviceset="VCC" device=""/>
 <part name="GND5" library="supply1" deviceset="GND" device=""/>
-<part name="VOUT" library="wirepad" deviceset="3,81/1,3" device="" value="OUT"/>
-<part name="VIN" library="wirepad" deviceset="3,81/1,3" device="" value="IN"/>
+<part name="OUT" library="wirepad" deviceset="3,81/1,3" device="" value="OUT"/>
+<part name="IN" library="wirepad" deviceset="3,81/1,3" device="" value="IN"/>
 <part name="GND_IN" library="wirepad" deviceset="3,81/1,3" device="" value="IN_GND"/>
 <part name="GND_OUT" library="wirepad" deviceset="3,81/1,3" device="" value="OUT_GND"/>
 <part name="GND6" library="supply1" deviceset="GND" device=""/>
@@ -12245,6 +12245,8 @@ Source: AVX .. aphvc.pdf</description>
 <sheets>
 <sheet>
 <plain>
+<text x="68.58" y="20.32" size="1.778" layer="91">R1 = 12.7K  R2 = 39K   Vout = 5.1v</text>
+<text x="68.58" y="15.24" size="1.778" layer="91">R1 = 10K  R2 = 31.6K  Vout = 5.1v</text>
 </plain>
 <instances>
 <instance part="U1" gate="A" x="43.18" y="55.88"/>
@@ -12264,8 +12266,8 @@ Source: AVX .. aphvc.pdf</description>
 <instance part="GND4" gate="1" x="35.56" y="86.36" rot="R270"/>
 <instance part="P+1" gate="VCC" x="-2.54" y="88.9"/>
 <instance part="GND5" gate="1" x="22.86" y="38.1"/>
-<instance part="VOUT" gate="1" x="144.78" y="63.5" rot="R180"/>
-<instance part="VIN" gate="1" x="-17.78" y="81.28"/>
+<instance part="OUT" gate="1" x="144.78" y="63.5" rot="R180"/>
+<instance part="IN" gate="1" x="-17.78" y="81.28"/>
 <instance part="GND_IN" gate="1" x="-17.78" y="60.96"/>
 <instance part="GND_OUT" gate="1" x="144.78" y="33.02" rot="R180"/>
 <instance part="GND6" gate="1" x="132.08" y="25.4"/>
@@ -12337,7 +12339,7 @@ Source: AVX .. aphvc.pdf</description>
 <junction x="109.22" y="63.5"/>
 <junction x="109.22" y="58.42"/>
 <junction x="121.92" y="60.96"/>
-<pinref part="VOUT" gate="1" pin="P"/>
+<pinref part="OUT" gate="1" pin="P"/>
 <junction x="121.92" y="63.5"/>
 <junction x="142.24" y="63.5"/>
 <wire x1="121.92" y1="63.5" x2="142.24" y2="63.5" width="0.1524" layer="91"/>
@@ -12439,7 +12441,7 @@ Source: AVX .. aphvc.pdf</description>
 <wire x1="53.34" y1="81.28" x2="20.32" y2="81.28" width="0.1524" layer="91"/>
 <junction x="20.32" y="81.28"/>
 <junction x="53.34" y="81.28"/>
-<pinref part="VIN" gate="1" pin="P"/>
+<pinref part="IN" gate="1" pin="P"/>
 <wire x1="-15.24" y1="81.28" x2="-2.54" y2="81.28" width="0.1524" layer="91"/>
 <junction x="-15.24" y="81.28"/>
 <junction x="-2.54" y="76.2"/>
